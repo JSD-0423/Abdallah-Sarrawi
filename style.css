@@ -1,0 +1,101 @@
+.header-box {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+}
+.button {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-color: #f0f9ff;
+  box-sizing: border-box;
+  border: 1px solid rgb(209, 213, 219);
+  font-weight: 400;
+  /* padding: 0.4rem 0.7rem; */
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.1;
+  cursor: pointer;
+  gap: 4px;
+}
+.top-paragraph {
+  color: #0768ac;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 200;
+}
+.welcome-message-container h1 {
+  color: #03c180;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  font-size: large;
+}
+.welcome-message-container h2 {
+  text-align: center;
+  font-weight: 100;
+  margin: 0;
+  font-size: small;
+  /* padding-left: 145px; */
+}
+.welcome-message-container {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 0;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 50px;
+}
+.welcome-message-headers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn-div {
+  display: flex;
+  gap: 4px;
+}
+body {
+  /* background-color: #f0f9ff; */
+}
+.searchbar-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* margin-top: 50px; */
+  border: 0.2px solid black;
+  display: flex;
+  /* justify-content: center; */
+  /* margin-left: 70px; */
+  /* margin-right: 70px; */
+  height: 45px;
+  /* border-right:0; */
+}
+.searchbar-container input {
+  border-right: 0;
+  width: 75%;
+}
+.searchbar-container input:focus {
+  /* background-color: #03c180; */
+  border-right: 0;
+}
+.searchbar-container-dropdown {
+  width: 12.5%;
+}
+.searchbar-container select {
+  border-radius: 0px;
+  border-left: 0;
+}
+.content-container {
+  background-color: #f0f9ff;
+  padding: 20px 3% 0px 3%;
+  height: 500px;
+}
+
+/* <span><ion-icon name="search-outline"></ion-icon></span> */
