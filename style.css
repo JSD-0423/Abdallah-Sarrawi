@@ -18,11 +18,12 @@
   box-sizing: border-box;
   border: 1px solid rgb(209, 213, 219);
   font-weight: 400;
-  /* padding: 0.4rem 0.7rem; */
+
   font-family: "Nunito Sans", sans-serif;
   font-size: 0.1;
   cursor: pointer;
   gap: 4px;
+  margin-top: 16px;
 }
 .top-paragraph {
   color: #0768ac;
@@ -41,7 +42,6 @@
   font-weight: 100;
   margin: 0;
   font-size: small;
-  /* padding-left: 145px; */
 }
 .welcome-message-container {
   background-color: #ffffff;
@@ -62,9 +62,7 @@
   display: flex;
   gap: 4px;
 }
-body {
-  /* background-color: #f0f9ff; */
-}
+
 .searchbar-container {
   background-color: #ffffff;
   border-radius: 10px;
@@ -89,8 +87,7 @@ body {
   width: 12.5%;
 }
 .searchbar-container select {
-  border-radius: 0px;
-  border-left: 0;
+  border-radius: 0px 05px 0px 0px;
 }
 .content-container {
   background-color: #f0f9ff;
