@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.google.com/specimen/Nunito+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
+  
+
+  <body  id="main-body">
+    <header class="header">
+      <div class="header-box">
+        <h1 class="title">Web Topics</h1>
+        <div class="btns">
+          <button class="button" id="mode-button"><i><ion-icon name="moon-outline"></ion-icon></i>Dark Mode</button>
+          <button class="button"> <i><ion-icon name="heart-outline"></ion-icon></i>Favourites</button>
+        </div>
+      </div>
+      <div class="welcome-message-container">
+        <div class="welcome-message-headers">
+            <h2>Welcome to our website!</h2>
+            <p>We have a new design that's fresh, modern, and easy to use.</p>
+        </div>
+      </div>
+    </header>
+    <div class="content-container">
+      <div class="search-box">
+        <div class="search-bar">
+        <i class="search-icon"><ion-icon name="search-outline"></ion-icon></i><input  type="text"  placeholder="Search the website.." /></div>
+        <div class="dropdown-container">
+        <select class="dropdown sort-dropdown"  name="sort" >
+                <option value="Sort by">Sort by</option>
+          </select>
+        <select class="dropdown filter-dropdown" name="filter" >
+                <option value="flter by">Filter by</option>
+          </select>
+        </div>
+      </div>
+      <div class="search-result">
+      <P>"24" Web Topics Found</P>
+    </div>
+      <div class="cards-container">
+        <div class="card-container">
+        <div class="img-banner"><img src="assets/html.png" alt="HTML">
+        </div>
+        <div class="card-info">
+        <p>Web Development Languages </p>
+      <p><b>HTML</b></p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Sarah Smith</p>
+        </div >
+      </div>
+      
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/css.webp" alt="CSS">
+        </div>
+        <div class="card-info">
+        <p>Web Development Languages </p>
+        <p><b>CSS</b></p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: David Lee</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/javascript.jpg" alt="JavaScript">
+        </div>
+        <div class="card-info">
+        <p>Web Development Languages </p>
+        <p><b>JavaScript</b></p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Emily Chen</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/jquery.png" alt="jQuery">
+        </div>
+        <div class="card-info">
+        <p>Frontend Frameworks and Libraries </p>
+        <p><b>jQuery</b></p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: John Johnson</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/angular.png" alt="Angular">
+        </div>
+        <div class="card-info">
+        <p>Frontend Frameworks and Libraries </p>
+        <p><b>Angular</b></p>
+      </div>
+          <div class="stars-box">
+        <i >
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Jessica Davis</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/react.webp" alt="React">
+        </div>
+        <div class="card-info">
+        <p>Frontend Frameworks and Libraries </p>
+        <p>
+          <b>React</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Daniel Brown</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/vuejs.jpeg" alt="Vue.js"> 
+        </div>
+        <div class="card-info">
+        <p>Frontend Frameworks and Libraries </p>
+        <p>
+          <b>Vue.js</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Ava Jones</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/nodejs.webp"alt="Node.js">
+        </div>
+        <div class="card-info">
+        <p>Backend Frameworks and Libraries </p>
+        <p>
+          <b>Node.js</b>
+        </p>
+      </div>
+          <div class="stars-box" >
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Michael Kim</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/expressjs.webp"alt="Express.js">
+        </div>
+        <div class="card-info">
+        <p>Backend Frameworks and Libraries </p>
+        <p>
+          <b>Express.js</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Sophia Rodriguez</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/ruby.jpeg" alt="Ruby on Rails">
+        </div>
+        <div class="card-info">
+        <p>Backend Frameworks and Libraries </p>
+        <p>
+          <b>Ruby on Rails</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: William Lee</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/django.jpeg"alt="Django">
+        </div>
+        <div class="card-info">
+        <p>Backend Frameworks and Libraries  </p>
+        <p>
+          <b>Django</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Olivia Martinez</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/flask.webp"alt="Flask">
+        </div>
+        <div class="card-info">
+        <p>Backend Frameworks and Libraries </p>
+        <p>
+          <b>Flask</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Ethan Thompson</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/sql.png"alt="SQL">
+        </div>
+        <div class="card-info">
+        <p>Databases and APIs </p>
+        <p>
+          <b>SQL</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Madison Davis</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+          
+        <div class="img-banner"><img src="assets/nosql.png"alt="NoSQL">
+        </div>
+        <div>
+        <p>Databases and APIs </p>
+        <p>
+          <b>NoSQL</b>
+        </p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Sarah Smith</p>
+        </div >
+        
+      
+      </div>
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/restapi.jpeg" alt="restapi">
+        </div>
+        <div class="card-info">
+        <p>Databases and APIs </p>
+      <p>
+        <b>REST APIs</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box" >
+          <p>Author: Jacob Garcia</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/graphql.png" alt="graphql">
+        </div>
+        <div class="card-info">
+        <p>Databasses and APIs </p>
+      <p>
+        <b>GraphQL</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Mia Brown</p>
+        </div >
+      </div>
+
+      
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/oauth.png" alt="oauth">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p><b>OAuth</b></p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Evelyn Nguyen</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/json.png" alt="json">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>JSON</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Liam Hernandez</p>
+        </div >
+      </div>
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/ajax.gif" alt="ajax">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>AJAX</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Avery Perez</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/websockets.png" alt="websockets">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Websockets</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Victoria Kim</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/responsive.gif" alt="responsive">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Responsive Design</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Ryan Jones</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/accessibility.png" alt="accessibility">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Accessibility</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Samantha Martin</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/ux.jpeg" alt="ux">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>User Experience (UX)</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Luke Davis</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/ui.png" alt="ui">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>User Interface (UI)</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Grave Wilson</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/design-systems.jpeg" alt="design-systems">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Design Systems</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Noah Martinez</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/performance.png" alt="performance">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Performance Optimization</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Chloe Taylor</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/cross-browser.jpeg" alt="cross-browser">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Cross Browser Compatibility</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: David Lee</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/seo.jpeg" alt="seo">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Search Engine Optimization</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Emily Kim</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/web-security.jpeg" alt="web-security">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Web Security</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Gabriel Hernandez</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/testing.jpeg" alt="testing">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Testing and Debugging</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Avery Perez</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/ci-cd.jpeg" alt="ci-cd">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Continuous Integration/Continuous</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Madison Davis</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/devops.png" alt="devops">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>DevOps</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Isabella wilson</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/cloud.jpeg" alt="cloud">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Cloud Computing</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Jacob Garcia</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/docker.png" alt="docker">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Docker</b>
+      </p>
+    </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Mia Brown</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/microservices.png" alt="microservices">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Microservices</b>
+      </p>
+    </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Evelyn Nguyen</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/pwa.png" alt="pwa">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+         <P><b>Progressive Web Apps (PWA)</b></P></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Liam Hernandez</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/wai.jpeg" alt="wai">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+        <p><b>Web Accessibility Initiative(WAI)</b></p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Avery Perez</p>
+        </div >
+      </div>
+
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/cms.png" alt="cms">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+      <p>
+        <b>Content Managment Systems(CMS)</b>
+      </p></div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Victoria Kim</p>
+        </div>
+
+      </div>
+      <div class="card-container">
+        <div class="img-banner"><img src="assets/analytics.png" alt="analytics">
+        </div>
+        <div class="card-info">
+        <p>Web Development Concepts and Technologies </p>
+        <p class="topic-title"><b>Web Analytics</b></p>
+      </div>
+          <div class="stars-box">
+        <i>
+          <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon" name="star"></ion-icon>
+        <ion-icon class="star-icon"   name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star"></ion-icon>
+        <ion-icon class="star-icon"  name="star-outline"></ion-icon></i>
+        </div>
+        <div class="author-box">
+          <p>Author: Ryan Jones</p>
+        </div>
+      </div>
+
+      </div>
+      </div>
+      </div>
+      
+    </div>
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <footer>
+      <div class="footer">
+        Developed with <i><ion-icon name="heart"></ion-icon></i> &copy; 2023
+      </div>
+    </footer>
+  </body>
+</html>

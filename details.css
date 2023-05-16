@@ -1,0 +1,227 @@
+* {
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  position: relative;
+}
+
+:root {
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #ffffff;
+  --bg_body: #f0f9ff;
+  --lines-color: #dddddd;
+  --body-text: #333333;
+  --heart-color: #dc143c;
+}
+
+.header-box {
+  background-color: var(--bg_default);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg_default);
+  border-radius: 5px;
+  border: 1px solid var(--lines-color);
+  font-weight: 400;
+  font-size: 1rem;
+  cursor: pointer;
+  gap: 4px;
+  height: 27px;
+}
+.button i {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  color: var(--brand-primary);
+  font-size: 19px;
+  font-weight: 700;
+}
+.welcome-message {
+  color: var(--brand-secondary);
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  font-size: 25px;
+}
+.info-message {
+  text-align: center;
+  font-weight: 200;
+  margin: 0;
+  font-size: 19px;
+}
+.welcome-container {
+  background-color: var(--bg_default);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 0;
+
+  margin-bottom: 25px;
+}
+.welcome-message-headers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.content-container {
+  background-color: var(--bg_body);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.details-container {
+  width: 100vw;
+  height: 350px;
+  background-color: var(--body-text);
+  padding-top: 20px;
+  margin-bottom: 25px;
+}
+.topic-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  margin-left: 200px;
+  width: 670px;
+  margin-top: 25px;
+}
+.head-paragraph {
+  font-size: 20px;
+  color: var(--brand-secondary);
+  font-weight: 400;
+  margin: 0;
+
+  margin-bottom: 5px;
+}
+.title-paragraph {
+  font-size: 30px;
+  margin: 0px;
+  font-weight: 700;
+  color: var(--bg_default);
+}
+.rating-box {
+  display: flex;
+  margin-left: 200px;
+  width: 670px;
+}
+.star-icon {
+  color: #e5a906;
+  font-size: 20px;
+}
+.info-box {
+  display: flex;
+  align-items: flex-start;
+
+  margin-left: 200px;
+  width: 670px;
+  height: 200px;
+}
+.info-box p {
+  color: var(--bg_default);
+  font-size: 20px;
+}
+.sub-topics-container {
+  margin-left: 200px;
+  width: 670px;
+  background-color: var(--bg_default);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sub-topic {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0.5px solid var(--lines-color);
+  width: 100%;
+  padding-left: 3%;
+  font-weight: 400;
+}
+
+.sub-icon {
+  color: var(--brand-secondary);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.first-sub p {
+  font-weight: 700;
+  font-size: 25px;
+  padding-left: 0.5%;
+}
+.first-sub {
+  border-radius: 5px 5px 0px 0px;
+}
+.last-sub {
+  border-radius: 0px 0px 5px 5px;
+}
+
+.card-container {
+  width: 400px;
+  height: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg_default);
+  align-items: flex-start;
+}
+.img-banner {
+  width: 100%;
+  height: 250px;
+}
+.img-banner img {
+  width: 100%;
+  height: 100%;
+}
+.feedback-box {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 350px;
+  height: 150px;
+}
+.add-to-fav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  height: 50%;
+  background-color: var(--brand-secondary);
+  font-size: 16px;
+  color: var(--bg_default);
+}
+
+.footer i {
+  color: var(--heart-color);
+}
+.footer {
+  position: absolute;
+  right: 30px;
+}
