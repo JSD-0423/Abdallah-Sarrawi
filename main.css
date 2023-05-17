@@ -38,7 +38,7 @@ body {
   height: 100%;
   margin: 0px;
   padding-left: 15px;
-  color: var(--body-text);
+  color: gray;
 }
 .dark-mode .author-box {
   color: var(--dark-body-text);
@@ -73,10 +73,10 @@ body {
   border-radius: 5px;
   border: 1px solid var(--lines-color);
   font-weight: 400;
-  font-size: 0.9rem;
+  font-size: 14px;
   cursor: pointer;
   gap: 4px;
-  height: 27px;
+  height: 35px;
 }
 
 .dark-mode .button {
@@ -88,11 +88,12 @@ body {
 .title {
   color: var(--brand-primary);
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 .dark-mode .title {
   color: var(--dark-brand-primary);
 }
+
 .welcome-message-container h2 {
   color: var(--brand-secondary);
   text-align: center;
@@ -214,6 +215,7 @@ body {
   margin-top: 16px;
   background-color: var(--bg_body);
   display: grid;
+
   grid-auto-rows: 325px;
   height: 100%;
   width: 100%;
@@ -244,12 +246,15 @@ body {
   height: 100px;
   width: 100%;
   color: var(--body-text);
+  padding: 0px 15px 0px 15px;
+}
+.card-info h2 {
+  margin: 0px;
 }
 .dark-mode .card-info {
   color: var(--dark-body-text);
 }
 .card-info p {
-  padding-left: 15px;
   font-size: 14px;
   font-weight: 400;
   text-overflow: ellipsis;
@@ -258,6 +263,10 @@ body {
 }
 .dark-mode .card-info p {
   color: var(--dark-body-text);
+}
+
+h2 {
+  margin: 0px;
 }
 .stars-box {
   width: 100%;
@@ -284,6 +293,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 7px 7px 0px 0px;
+  object-fit: cover;
 }
 .footer {
   width: 100%;
@@ -307,9 +317,7 @@ body {
     width: 90%;
     margin: auto;
     padding: 10px 0px 0px 0px;
-
     margin-bottom: 15px;
-    justify-content: space-between;
   }
 
   .welcome-message-container {
@@ -319,31 +327,26 @@ body {
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   .welcome-message-container p {
     width: 100%;
+    text-align: start;
   }
 
-  .content-container {
-    width: 100vw;
-  }
   .cards-container {
-    width: 100%;
     grid-template-columns: 100%;
-    justify-items: center;
-    align-items: center;
+    margin: auto;
   }
   .card-container {
     width: 95%;
   }
   .search-result {
     width: 95%;
-    display: flex;
     margin: auto;
   }
 
   .search-box {
     width: 95%;
-    display: flex;
     height: 90px;
     margin: auto;
     flex-direction: column;
@@ -352,12 +355,8 @@ body {
     margin: auto;
   }
   .search-bar {
-    align-items: center;
     justify-content: flex-start;
-    width: 100%;
-    display: flex;
     height: 100%;
-    border: 0px;
   }
   .dropdown-container {
     width: 100%;
@@ -385,9 +384,6 @@ body {
   }
   .button {
     font-size: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .button i {
     font-size: 15px;
@@ -398,89 +394,55 @@ body {
     padding-left: 2px;
     padding-right: 2px;
   }
+
+  .author-box {
+    font-size: 12px;
+    font-weight: 400;
+  }
   .img-banner {
     height: 150px;
   }
   .img-banner img {
     height: 150px;
   }
-  .author-box {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding-left: 15px;
-    font-size: 12px;
-    font-weight: 400;
-  }
 }
 
 @media screen and (min-width: 391px) {
   .header-box {
-    width: 90%;
-    margin: auto;
     padding-top: 15px;
-    margin-bottom: 15px;
   }
-  .welcome-message-container {
-    margin: auto;
-    padding-bottom: 16px;
-    width: 90%;
-  }
+
   .content-container {
-    width: 100vw;
     padding: 0;
     padding-top: 16px;
   }
-  .cards-container {
-    width: 100%;
-    grid-template-columns: 100%;
 
-    justify-items: center;
-    align-items: center;
-  }
   .card-container {
     width: 380px;
   }
   .search-result {
     width: 90%;
-    display: flex;
-    margin: auto;
   }
   .search-box {
     width: 90%;
-    height: 90px;
-    margin: auto;
-    flex-direction: column;
-  }
-  .search-bar {
-    width: 100%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .header-box {
-    width: 90%;
-  }
   .welcome-message-container {
     padding-bottom: 25px;
-    width: 90%;
     align-items: center;
   }
   .cards-container {
-    width: 80%;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
   .card-container {
-    width: 230px;
+    width: 100%;
   }
   .search-box {
-    display: flex;
     flex-direction: row;
-    width: 90%;
     height: 45px;
   }
   .dropdown-container {
@@ -496,49 +458,31 @@ body {
     border-radius: 0px;
   }
   .button {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 900px) {
   .cards-container {
-    width: 90%;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
     padding: 0;
-  }
-  .card-container {
-    width: 250px;
   }
 }
 
 @media screen and (min-width: 1080px) {
   .cards-container {
-    width: 90%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
-  }
-  .card-container {
-    width: 100%;
   }
 }
 @media screen and (min-width: 1440px) {
   .cards-container {
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
   }
   .title {
     font-size: 20px;
   }
   .button {
-    font-size: 20px;
+    font-size: 16px;
   }
   .welcome-message-headers h2 {
     font-size: 30px;
@@ -546,21 +490,10 @@ body {
   .welcome-message-headers p {
     font-size: 20px;
   }
-  .card-container {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 1650px) {
   .cards-container {
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin: auto;
-    justify-items: center;
-    align-items: center;
-    grid-template-rows: 380px;
-  }
-  .card-container {
-    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
   }
 }
