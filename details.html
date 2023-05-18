@@ -16,25 +16,25 @@
     rel="stylesheet"
   />
 
-  <body class="light-mode">
+  <body id="main-body">
     <header class="header">
       <div class="header-box">
         <h1 class="title">Web Topics</h1>
         <div class="btns">
-          <button class="button">
+          <button class="button" id="mode-button">
             <i><ion-icon name="moon-outline"></ion-icon></i>Dark Mode
           </button>
-          <button class="button">
+          <button class="button" id="favourite-button">
             <i><ion-icon name="heart-outline"></ion-icon></i>Favourites
           </button>
         </div>
       </div>
-      <div class="welcome-container">
+      <div class="welcome-message-container">
+        <div class="welcome-background-1"></div>
+        <div class="welcome-background-2"></div>
         <div class="welcome-message-headers">
-          <p class="welcome-message">Welcome to our website!</p>
-          <p class="info-message">
-            We have a new design that's fresh, modern, and easy to use.
-          </p>
+          <h2>Welcome to our website!</h2>
+          <p>We have a new design that's fresh, modern, and easy to use.</p>
         </div>
       </div>
     </header>
@@ -129,6 +129,49 @@
       </footer>
     </div>
 
+    <div class="favourite-box hidden">
+      <p class="favourite-box-title">My Favourite Topics</p>
+      <div class="fav-card-container">
+        <div class="fav-card">
+          <div class="fav-img-banner">
+            <img src="assets/react.webp" alt="React" />
+          </div>
+          <div class="fav-card-info">
+            <h5>
+              <b>React</b>
+            </h5>
+          </div>
+          <div class="fav-stars-box">
+            <i>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star-outline"></ion-icon
+            ></i>
+          </div>
+        </div>
+        <div class="fav-card">
+          <div class="fav-img-banner">
+            <img src="assets/cloud.jpeg" alt="cloud" />
+          </div>
+          <div class="fav-card-info">
+            <h5>
+              <b>Cloud</b>
+            </h5>
+          </div>
+          <div class="fav-stars-box">
+            <i>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star"></ion-icon>
+              <ion-icon class="fav-star-icon" name="star-outline"></ion-icon
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -137,5 +180,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script defer src="details.js"></script>
   </body>
 </html>

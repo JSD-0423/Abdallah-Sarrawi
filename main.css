@@ -357,8 +357,14 @@ h2 {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
+.dark-mode .favourite-box {
+  background-color: var(--dark-bg_default);
+}
 .favourite-box-title {
   margin: 0px 0px 10px 0px;
+}
+.dark-mode .favourite-box-title {
+  color: var(--dark-body-text);
 }
 .fav-card-container {
   display: flex;
@@ -386,6 +392,9 @@ h2 {
 .fav-card-info h5 {
   margin: 0px;
 }
+.dark-mode .fav-card-info h5 {
+  color: var(--dark-body-text);
+}
 .fav-stars-box {
   height: 35px;
   padding: 0px 10px;
@@ -407,13 +416,20 @@ h2 {
   }
 
   .welcome-message-container {
-    width: 90%;
     margin: auto;
     padding-bottom: 16px;
     align-items: flex-start;
     justify-content: flex-start;
   }
-
+  .welcome-background-2 {
+    height: 50%;
+  }
+  .welcome-background-1 {
+    height: 50%;
+  }
+  .welcome-message-headers {
+    padding: 7% 0% 0% 6%;
+  }
   .welcome-message-container p {
     width: 100%;
     text-align: start;
@@ -460,6 +476,7 @@ h2 {
     width: 100%;
     height: 100%;
     border: 0px;
+    padding: 0% 3%;
   }
   .filter-dropdown {
     border-left: 1px solid var(--lines-color);
@@ -497,7 +514,15 @@ h2 {
   .header-box {
     padding-top: 15px;
   }
-
+  .welcome-message-headers {
+    padding: 8% 0% 0% 6%;
+  }
+  .welcome-background-2 {
+    height: 60%;
+  }
+  .welcome-background-1 {
+    height: 60%;
+  }
   .content-container {
     padding: 0;
     padding-top: 16px;
@@ -518,6 +543,15 @@ h2 {
   .welcome-message-container {
     padding-bottom: 25px;
     align-items: center;
+  }
+  .welcome-message-headers {
+    padding: 6% 0% 0% 6%;
+  }
+  .welcome-background-2 {
+    height: 80%;
+  }
+  .welcome-background-1 {
+    height: 80%;
   }
   .cards-container {
     width: 90%;
@@ -553,6 +587,21 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
   }
+  .welcome-message-headers {
+    padding: 6% 0% 0% 6%;
+  }
+  .welcome-message-headers h2 {
+    font-size: 25px;
+  }
+  .welcome-message-headers p {
+    font-size: 20px;
+  }
+  .welcome-background-2 {
+    height: 100%;
+  }
+  .welcome-background-1 {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -572,9 +621,11 @@ h2 {
   }
   .welcome-message-container {
     padding-top: 70px;
-    height: 200px;
+    height: 160px;
   }
-
+  .welcome-message-headers {
+    padding: 0%;
+  }
   .welcome-message-headers h2 {
     font-size: 30px;
   }
