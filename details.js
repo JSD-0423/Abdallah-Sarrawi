@@ -15,9 +15,3 @@ console.log(toggleModeButton);
 
 toggleModeButton.addEventListener("click", toggleMode);
 favouriteButton.addEventListener("click", showFavouriteList);
-
-// if (favouriteButton) {
-//   favouriteButton.addEventListener("click", () => {
-//     console.log("btn clicked");
-//   });
-// }
