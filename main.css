@@ -32,18 +32,6 @@ body {
   --dark-heart-color: #dc143c;
 }
 
-.author-box {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding-left: 15px;
-  color: gray;
-}
-.dark-mode .author-box {
-  color: var(--dark-body-text);
-}
-
 .header-box {
   background-color: var(--bg_default);
   display: flex;
@@ -283,14 +271,27 @@ body {
   color: var(--dark-body-text);
 }
 .card-info p {
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 400;
-  margin: 15px 0 0 0;
-
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--body-text);
+  white-space: nowrap;
 }
 
 .dark-mode .card-info p {
+  color: var(--dark-body-text);
+}
+.author-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px 15px;
+  color: gray;
+}
+.dark-mode .author-box {
   color: var(--dark-body-text);
 }
 
@@ -300,7 +301,7 @@ h2 {
 .stars-box {
   width: 100%;
   display: flex;
-  padding-left: 15px;
+  padding: 0px 15px;
   margin: 0px;
 }
 .star-icon {
@@ -529,13 +530,16 @@ h2 {
   }
 
   .card-container {
-    width: 380px;
+    width: 350px;
   }
   .search-result {
     width: 90%;
   }
   .search-box {
     width: 90%;
+  }
+  .card-info p {
+    width: 350px;
   }
 }
 
@@ -560,6 +564,9 @@ h2 {
   }
   .card-container {
     width: 100%;
+  }
+  .card-info p {
+    width: 137px;
   }
   .search-box {
     flex-direction: row;
@@ -587,6 +594,9 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
   }
+  .card-info p {
+    width: 229px;
+  }
   .welcome-message-headers {
     padding: 6% 0% 0% 6%;
   }
@@ -608,10 +618,16 @@ h2 {
   .cards-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .card-info p {
+    width: 200px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .cards-container {
     grid-template-columns: repeat(5, 1fr);
+  }
+  .card-info p {
+    width: 216px;
   }
   .title {
     font-size: 20px;
@@ -637,6 +653,9 @@ h2 {
 @media screen and (min-width: 1650px) {
   .cards-container {
     grid-template-columns: repeat(6, 1fr);
+  }
+  .card-info p {
+    width: 204px;
   }
   .search-box {
     height: 60px;

@@ -186,6 +186,7 @@ body {
   display: flex;
   margin-left: 200px;
   width: 45%;
+  margin-bottom: 10px;
 }
 .star-icon {
   color: #e5a906;
@@ -194,13 +195,14 @@ body {
 .info-box {
   display: flex;
   align-items: flex-start;
-  width: 45%;
+  width: 46%;
   margin-left: 200px;
   height: 200px;
 }
 .info-box p {
   color: var(--bg_default);
   font-size: 20px;
+  margin: 0px;
 }
 .sub-topics-container {
   margin-left: 200px;
@@ -382,7 +384,10 @@ body {
 .footer {
   text-align: center;
   margin-top: 50px;
-  margin-right: 300px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
 }
 .dark-mode .footer {
   color: var(--dark-body-text);
