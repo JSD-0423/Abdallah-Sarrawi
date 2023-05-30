@@ -36,13 +36,9 @@ body {
   background-color: var(--bg_default);
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-bottom: 50px;
-  text-align: center;
   align-items: center;
-  width: 100px;
-  height: 100%;
+  height: 70px;
+  padding: 0px 55px 0px 55px;
 }
 .dark-mode .header-box {
   background-color: var(--dark-bg_default);
@@ -64,7 +60,8 @@ body {
   font-size: 14px;
   cursor: pointer;
   gap: 4px;
-  height: 35px;
+  height: 30px;
+  padding: 8px;
 }
 
 .dark-mode .button {
@@ -87,16 +84,16 @@ body {
   text-align: center;
   font-weight: 700;
   margin: 0;
-  font-size: 19px;
+  font-size: 20px;
 }
 .dark-mode .welcome-message-container h2 {
   color: var(--dark-brand-secondary);
 }
 .welcome-message-container p {
   text-align: center;
-  font-weight: 200;
+  font-weight: 400;
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 .welcome-message-container {
   position: relative;
@@ -107,7 +104,7 @@ body {
   text-align: center;
   flex-direction: column;
   padding-top: 0;
-  margin-bottom: 50px;
+  height: 115px;
 }
 .welcome-background-1 {
   position: absolute;
@@ -116,7 +113,7 @@ body {
   top: 0;
   background-color: var(--brand-secondary);
   z-index: 1;
-  clip-path: polygon(100% 0, 22% 0%, 100% 47%);
+  clip-path: polygon(100% 0, 8% 0%, 100% 60%);
 }
 .welcome-background-2 {
   position: absolute;
@@ -129,7 +126,7 @@ body {
     var(--brand-secondary)
   );
   z-index: 2;
-  clip-path: polygon(0 47%, 93% 0, 0 0);
+  clip-path: polygon(0 60%, 90% 0, 0 0);
 }
 
 .dark-mode .welcome-message-container {
@@ -141,20 +138,21 @@ body {
   flex-direction: column;
   align-items: flex-start;
   z-index: 2;
+  padding-top: 50px;
 }
 
 .search-box {
   background-color: var(--bg_default);
   border-radius: 10px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
   display: flex;
   height: 45px;
   overflow: hidden;
+  width: 100%;
 }
 .dark-mode .search-box {
   background-color: var(--dark-bg_default);
-  border: 0.2px solid var(--dark-lines-color);
   color: var(--dark-body-text);
 }
 .search-bar {
@@ -165,8 +163,7 @@ body {
   border: 0px;
 }
 .search-icon {
-  padding-top: 5px;
-  margin-left: 15px;
+  padding: 5px 0px 0px 15px;
 }
 .search-bar input {
   display: flex;
@@ -174,8 +171,9 @@ body {
   border: 0px solid var(--lines-color);
   width: 100%;
   border-radius: 10px;
-  margin-left: 10px;
+  font-size: 16px;
   height: 100%;
+  padding: 0px 15px 0px 15px;
 }
 .dark-mode .search-bar input {
   border: 0px solid var(--dark-lines-color);
@@ -187,19 +185,38 @@ body {
   border: 0;
   outline: none;
 }
-
 .dropdown-container {
-  width: 11.5%;
   border: 0;
   border: 1px solid var(--lines-color);
-}
-.dark-mode .dropdown-container {
-  border: 1px solid var(--dark-lines-color);
+  width: 39%;
 }
 .dropdown {
-  border-radius: 10px;
-  border-left: 0px solid var(--lines-color);
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--lines-color);
+  font-size: 12px;
+  width: 100%;
+  text-align: start;
+  justify-content: center;
+  padding: 0% 2% 0% 2%;
 }
+label {
+  padding-left: 5px;
+}
+select {
+  border: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  outline: none;
+}
+.dark-mode select {
+  border: 0px;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: var(--dark-bg_default);
+  color: var(--dark-body-text);
+}
+
 .dark-mode .dropdown {
   border-left: 0px solid var(--dark-lines-color);
   background-color: var(--dark-bg_default);
@@ -208,7 +225,7 @@ body {
 
 .content-container {
   background-color: var(--bg_body);
-  padding: 20px 3% 0px 3%;
+  padding: 20px 4% 0px 4%;
   height: 100%;
   width: 100vw;
   display: flex;
@@ -218,7 +235,6 @@ body {
   background-color: var(--dark-bg_body);
 }
 .search-result {
-  margin-top: 20px;
   font-size: 25px;
   font-weight: 700;
   display: flex;
@@ -228,15 +244,13 @@ body {
 }
 
 .cards-container {
-  margin-top: 16px;
   background-color: var(--bg_body);
   display: grid;
-
-  grid-auto-rows: 325px;
+  grid-auto-rows: 300px;
   height: 100%;
   width: 100%;
-  gap: 2rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 27px;
+  grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
   align-items: center;
   justify-items: center;
 }
@@ -249,23 +263,37 @@ body {
   background-color: var(--bg_default);
   align-items: flex-start;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-  border-radius: 7px 7px 7px 7px;
-  width: 242px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  width: 100%;
   cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .dark-mode .card-container {
   background-color: var(--dark-bg_default);
   border: 1px solid var(--dark-lines-color);
 }
+.card-details {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
 .card-info {
-  height: 100px;
   width: 100%;
   color: var(--body-text);
-  padding: 0px 15px 0px 15px;
+  margin: 0px;
+  padding-bottom: 10px;
 }
 .card-info h5 {
   margin: 0px;
+  height: 35px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .dark-mode .card-info {
   color: var(--dark-body-text);
@@ -278,6 +306,7 @@ body {
   text-overflow: ellipsis;
   color: var(--body-text);
   white-space: nowrap;
+  margin: 0px;
 }
 
 .dark-mode .card-info p {
@@ -285,24 +314,18 @@ body {
 }
 .author-box {
   display: flex;
-  width: 100%;
-  height: 100%;
   margin: 0px;
-  padding: 0px 15px;
   color: gray;
 }
-.dark-mode .author-box {
-  color: var(--dark-body-text);
-}
-
-h2 {
+.author-box p {
   margin: 0px;
 }
+
 .stars-box {
   width: 100%;
   display: flex;
-  padding: 0px 15px;
   margin: 0px;
+  padding-bottom: 15px;
 }
 .star-icon {
   color: #e5a906;
@@ -313,7 +336,7 @@ h2 {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 150px;
+  height: 140px;
   border-radius: 7px 7px 0px 0px;
 }
 .dark-mode .img-banner {
@@ -331,8 +354,7 @@ h2 {
   position: absolute;
   text-align: center;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 20px 0px;
 }
 .dark-mode .footer {
   background-color: var(--dark-bg_body);
@@ -355,8 +377,8 @@ h2 {
   left: 0px;
   background-color: var(--bg_default);
   padding: 10px 40px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 .dark-mode .favourite-box {
   background-color: var(--dark-bg_default);
@@ -376,8 +398,8 @@ h2 {
   height: 150px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
   display: flex;
   flex-direction: column;
 }
@@ -408,50 +430,26 @@ h2 {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 20px) {
+@media screen and (min-width: 27px) {
   .header-box {
-    width: 90%;
-    margin: auto;
-    padding: 10px 0px 0px 0px;
-    margin-bottom: 15px;
-  }
-
-  .welcome-message-container {
-    margin: auto;
-    padding-bottom: 16px;
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-  .welcome-background-2 {
-    height: 50%;
-  }
-  .welcome-background-1 {
-    height: 50%;
+    padding: 0% 4% 0% 4%;
   }
   .welcome-message-headers {
-    padding: 7% 0% 0% 6%;
+    padding: 25px 4% 0% 4%;
   }
+  .welcome-background-1 {
+    height: 33%;
+  }
+  .welcome-background-2 {
+    height: 33%;
+  }
+
   .welcome-message-container p {
-    width: 100%;
     text-align: start;
   }
 
-  .cards-container {
-    grid-template-columns: 100%;
-    margin: auto;
-  }
-  .card-container {
-    width: 95%;
-  }
-  .search-result {
-    width: 95%;
-    margin: auto;
-  }
-
   .search-box {
-    width: 95%;
-    height: 90px;
-    margin: auto;
+    height: 104px;
     flex-direction: column;
   }
   .star-icon {
@@ -459,15 +457,18 @@ h2 {
   }
   .search-bar {
     justify-content: flex-start;
-    height: 100%;
+    height: 50%;
   }
   .dropdown-container {
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: space-between;
     border: 0;
     border-top: 1px solid var(--lines-color);
+  }
+  .dark-mode .dropdown-container {
+    border-top: 1px solid var(--dark-lines-color);
   }
 
   .dropdown:focus {
@@ -477,20 +478,19 @@ h2 {
     width: 100%;
     height: 100%;
     border: 0px;
-    padding: 0% 3%;
+    padding: 2%;
   }
-  .filter-dropdown {
+  #filter-by {
     border-left: 1px solid var(--lines-color);
-    border-radius: 0px 0px 10px 0px;
   }
-  .dark-mode .filter-dropdown {
+  .dark-mode #filter-by {
     border-left: 1px solid var(--dark-lines-color);
   }
   .button {
     font-size: 0px;
   }
   .button i {
-    font-size: 15px;
+    font-size: 14px;
     width: 15px;
     height: 15px;
     justify-content: center;
@@ -503,86 +503,38 @@ h2 {
     font-size: 12px;
     font-weight: 400;
   }
-  .img-banner {
-    height: 150px;
-  }
-  .img-banner img {
-    height: 150px;
-  }
-}
-
-@media screen and (min-width: 391px) {
-  .header-box {
-    padding-top: 15px;
-  }
-  .welcome-message-headers {
-    padding: 8% 0% 0% 6%;
-  }
-  .welcome-background-2 {
-    height: 60%;
-  }
-  .welcome-background-1 {
-    height: 60%;
-  }
-  .content-container {
-    padding: 0;
-    padding-top: 16px;
-  }
-
-  .card-container {
-    width: 350px;
-  }
-  .search-result {
-    width: 90%;
-  }
-  .search-box {
-    width: 90%;
-  }
-  .card-info p {
-    width: 350px;
-  }
 }
 
 @media screen and (min-width: 600px) {
-  .welcome-message-container {
-    padding-bottom: 25px;
-    align-items: center;
-  }
-  .welcome-message-headers {
-    padding: 6% 0% 0% 6%;
+  .welcome-background-1 {
+    height: 80%;
   }
   .welcome-background-2 {
     height: 80%;
   }
-  .welcome-background-1 {
-    height: 80%;
+  .welcome-message-headers {
+    padding-top: 50px;
   }
-  .cards-container {
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-  .card-container {
-    width: 100%;
-  }
-  .card-info p {
-    width: 137px;
-  }
+
   .search-box {
     flex-direction: row;
-    height: 45px;
+    height: 52px;
+  }
+  .search-bar {
+    height: 100%;
+  }
+  .dropdown-container {
+    height: 100%;
   }
   .dropdown-container {
     border: 0px;
-    width: 45%;
+    width: 60%;
   }
-
-  .filter-dropdown {
-    border-radius: 0px 10px 10px 0px;
+  #sort-by {
+    border-left: var(--lines-color) 1px solid;
   }
-  .sort-dropdown {
-    border-left: 1px solid var(--lines-color);
-    border-radius: 0px;
+  .dark-mode #sort-by {
+    border-left: var(--dark-lines-color) 1px solid;
   }
   .button {
     font-size: 14px;
@@ -590,74 +542,25 @@ h2 {
 }
 
 @media screen and (min-width: 900px) {
-  .cards-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0;
-  }
-  .card-info p {
-    width: 229px;
-  }
-  .welcome-message-headers {
-    padding: 6% 0% 0% 6%;
-  }
-  .welcome-message-headers h2 {
-    font-size: 25px;
-  }
-  .welcome-message-headers p {
-    font-size: 20px;
+  .welcome-background-1 {
+    height: 100%;
   }
   .welcome-background-2 {
     height: 100%;
   }
-  .welcome-background-1 {
-    height: 100%;
+
+  .dropdown-container {
+    border: 0px;
+    width: 39%;
   }
 }
 
-@media screen and (min-width: 1080px) {
-  .cards-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .card-info p {
-    width: 200px;
-  }
-}
 @media screen and (min-width: 1440px) {
-  .cards-container {
-    grid-template-columns: repeat(5, 1fr);
+  .dropdown-container {
+    width: 39%;
   }
-  .card-info p {
-    width: 216px;
-  }
-  .title {
-    font-size: 20px;
-  }
-  .button {
-    font-size: 16px;
-  }
-  .welcome-message-container {
-    padding-top: 70px;
-    height: 160px;
-  }
-  .welcome-message-headers {
-    padding: 0%;
-  }
-  .welcome-message-headers h2 {
-    font-size: 30px;
-  }
-  .welcome-message-headers p {
-    font-size: 20px;
-  }
-}
 
-@media screen and (min-width: 1650px) {
-  .cards-container {
-    grid-template-columns: repeat(6, 1fr);
-  }
-  .card-info p {
-    width: 204px;
-  }
-  .search-box {
-    height: 60px;
+  .welcome-message-headers {
+    padding-top: 50px;
   }
 }
