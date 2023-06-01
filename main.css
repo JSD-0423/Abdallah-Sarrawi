@@ -155,6 +155,18 @@ body {
 .search-box input:focus {
   outline: none;
 }
+.search-box {
+  height: 50px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.dark-mode .search-box {
+  background-color: var(--dark-bg_default);
+}
+.dropdown {
+  font-size: 12px;
+}
+
 .search-result {
   font-size: 25px;
   font-weight: 700;
@@ -285,9 +297,30 @@ body {
   .star-icon {
     margin: auto;
   }
+  .search-box {
+    height: 100px;
+    flex-direction: column;
+  }
+  .dropdown-container {
+    border-top: 1px solid var(--lines-color);
+  }
+
+  #sort-by {
+    border: 0px;
+  }
+  .search-bar {
+    height: 50px;
+  }
+  .dropdown {
+    height: 50px;
+  }
 
   .dropdown:focus {
     outline: none;
+  }
+
+  #sort-by {
+    border: 0px;
   }
 
   #filter-by {
@@ -338,6 +371,17 @@ body {
   .welcome-background-2 {
     height: 100%;
   }
+  .search-box {
+    height: 50px;
+    flex-direction: row;
+  }
+  .dropdown-container {
+    border: 0px;
+  }
+  #sort-by {
+    border-left: 1px solid var(--lines-color);
+  }
+}
 }
 
 @media screen and (min-width: 1440px) {
@@ -345,7 +389,6 @@ body {
     padding-top: 50px;
   }
 }
-
 .card-img-top {
   height: 150px;
   object-fit: cover;

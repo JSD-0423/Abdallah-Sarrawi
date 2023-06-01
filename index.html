@@ -49,9 +49,11 @@
     </div>
     <div class="content-container">
       <div
-        class="search-box container-fluid p-0 d-flex justify-content-start p-0"
+        class="search-box container-fluid p-0 d-flex justify-content-start p-0 rounded overflow-hidden"
       >
-        <div class="d-flex col-lg-9 col-sm-6 overflow-hidden rounded-start">
+        <div
+          class="search-bar d-flex col col-lg-9 overflow-hidden rounded-start"
+        >
           <i class="d-flex search-icon align-items-center py-2 bg-white px-2"
             ><ion-icon name="search-outline"></ion-icon></i
           ><input
@@ -60,21 +62,21 @@
             placeholder="Search the website..."
           />
         </div>
-        <div class="dropdown-container d-flex col-lg-3 col-sm-6">
+        <div class="dropdown-container col d-flex col-lg-3">
           <div
-            class="dropdown bg-white d-flex flex-column p-0 col px-2"
+            class="dropdown bg-white d-flex flex-column p-2 col"
             id="sort-by"
           >
-            <label class="px-2" for="sort">Sort by:</label>
+            <label for="sort">Sort by:</label>
             <select class="border-0" id="sort" name="sort">
               <option value="Default">Default</option>
             </select>
           </div>
           <div
-            class="dropdown bg-white d-flex flex-column p-0 col px-2"
+            class="dropdown bg-white d-flex flex-column p-2 col"
             id="filter-by"
           >
-            <label class="px-2" for="filter">Filter by:</label>
+            <label for="filter">Filter by:</label>
             <select class="border-0" id="filter" name="filter">
               <option value="Default">Default</option>
             </select>
