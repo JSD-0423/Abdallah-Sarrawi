@@ -1,17 +1,5 @@
-const body = document.getElementById("main-body");
-const toggleModeButton = document.getElementById("mode-button");
-const favouriteButton = document.querySelector("#favourite-button");
-const favouriteStrip = document.querySelector(".favourite-box");
+import DarkModeModule from "./Modules/darkmode.js";
+import showHideFavouritePanel from "./Modules/favouritepanel.js";
 
-const toggleMode = () => {
-  body.classList.toggle("dark-mode");
-};
-
-const showFavouriteList = () => {
-  favouriteStrip.classList.toggle("hidden");
-};
-
-console.log(toggleModeButton);
-
-toggleModeButton.addEventListener("click", toggleMode);
-favouriteButton.addEventListener("click", showFavouriteList);
+showHideFavouritePanel();
+DarkModeModule();

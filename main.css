@@ -150,6 +150,7 @@ body {
   height: 45px;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 25px;
 }
 .dark-mode .search-box {
   background-color: var(--dark-bg_default);
@@ -247,15 +248,38 @@ select {
   background-color: var(--bg_body);
   display: grid;
   grid-auto-rows: 300px;
-  height: 100%;
   width: 100%;
   gap: 27px;
   grid-template-columns: repeat(auto-fill, minmax(208px, 1fr));
   align-items: center;
   justify-items: center;
+  min-height: calc(100vh - 401px);
+  position: relative;
 }
+
 .dark-mode .cards-container {
   background-color: var(--dark-bg_body);
+}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: absolute;
+}
+.dark-mode .loader {
+  border-top: 16px solid var(--dark-bg_default); /* Blue */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .card-container {

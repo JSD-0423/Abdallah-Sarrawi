@@ -216,6 +216,9 @@ h4 {
   height: 100%;
   padding: 30px 44% 30px 19%;
 }
+.dark-mode .related-topics-container {
+  background: var(--dark-bg_default);
+}
 .sub-topics-container {
   width: 100%;
   background-color: var(--bg_default);
