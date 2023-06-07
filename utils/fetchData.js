@@ -1,16 +1,17 @@
 const loader = document.querySelector(".loader");
+const errorMessage = document.querySelector(".error-container");
 
 const fetchData = async (url) => {
   try {
-    console.log("loader", loader);
+    errorMessage.classList.add("hidden");
     loader.classList.remove("hidden");
     const response = await fetch(url);
     const data = await response.json();
+    loader.classList.add("hidden");
     return data;
   } catch (e) {
-    console.log("error", e);
-    const message = `Something went wrong. Web topics failed to load.: ${response.status}`;
     loader.classList.add("hidden");
+    errorMessage.classList.remove("hidden");
   }
 };
 

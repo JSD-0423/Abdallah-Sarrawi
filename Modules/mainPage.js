@@ -2,7 +2,7 @@ import fetchData from "../utils/fetchData.js";
 import renderCards from "../utils/renderCards.js";
 const sortDropdown = document.getElementById("sort");
 const searchBar = document.getElementById("search-bar-input");
-const filter = document.getElementById("filter");
+const filterDropdown = document.getElementById("filter");
 
 const sortData = (dataArray, selectedKey) => {
   const sortedData = dataArray.sort((a, b) => {
@@ -16,33 +16,59 @@ const sortData = (dataArray, selectedKey) => {
   });
   return sortedData;
 };
+const filterData = (dataArray, property, value) => {
+  if (value === "Default") return dataArray;
+  const filteredArray = dataArray.filter((obj) => obj[property] === value);
+  console.log(filteredArray);
+  return filteredArray;
+};
 
-const mappingObject = {
+const sortingMappingObject = {
   "Author Name": "name",
   "Topic Title": "topic",
 };
 
 let fetchedData = [];
 let filterCategories = [];
+
 let timer;
 
 const mainPage = () => {
   fetchData("https://tap-web-1.herokuapp.com/topics/list").then((data) => {
     filterCategories = new Set(data.map((item) => item.category));
     filterCategories.forEach((item) => {
-      const category = `<option value=${item}>${item}</option>`;
-      filter.insertAdjacentHTML("beforeend", category);
+      const category = `<option value="${item}">${item}</option>`;
+      filterDropdown.insertAdjacentHTML("beforeend", category);
     });
+
     fetchedData = data;
+
     const selectedValue = sortDropdown.value;
-    const sortedData = sortData(fetchedData, mappingObject[selectedValue]);
+    const sortedData = sortData(
+      fetchedData,
+      sortingMappingObject[selectedValue]
+    );
     renderCards(sortedData);
+  });
+
+  filterDropdown.addEventListener("change", (e) => {
+    let selectedFilter = e.target.value;
+    console.log("fetchedData from filter", fetchedData);
+
+    const filteredData = filterData(fetchedData, "category", selectedFilter);
+
+    renderCards(filteredData);
   });
 
   sortDropdown.addEventListener("change", (e) => {
     const selectedValue = e.target.value;
-    const sortedData = sortData(fetchedData, mappingObject[selectedValue]);
-    renderCards(sortedData);
+    const selectedFilter = filterDropdown.value;
+    const sortedData = sortData(
+      fetchedData,
+      sortingMappingObject[selectedValue]
+    );
+    const filteredData = filterData(sortedData, "category", selectedFilter);
+    renderCards(filteredData);
   });
 
   searchBar.addEventListener("input", (event) => {
@@ -55,7 +81,7 @@ const mainPage = () => {
           fetchedData = data;
           const sortedData = sortData(
             fetchedData,
-            mappingObject[selectedValue]
+            sortingMappingObject[selectedValue]
           );
           renderCards(sortedData);
         })

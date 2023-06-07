@@ -7,11 +7,12 @@ const renderCards = (data) => {
     const imgName = item.image;
     const authorName = item.name;
     const topicName = item.topic;
-    const card = `<div class="card-container">
+    const topicCategory = item.category;
+    const card = `<div class="card-container" id="${item.id}">
       <div class="img-banner"><img src="assets/${imgName}" alt="${imgName}" /></div>
       <div class="card-details">
         <div class="card-info">
-          <p>Web Development Concepts and Technologies</p>
+          <p>${topicCategory}</p>
           <h5>
             <b>${topicName}</b>
           </h5>

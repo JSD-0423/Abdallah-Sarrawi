@@ -209,6 +209,10 @@ select {
   font-weight: 400;
   font-size: 16px;
   outline: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .dark-mode select {
   border: 0px;
