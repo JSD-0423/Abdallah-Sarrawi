@@ -1,0 +1,50 @@
+.detailsContentContainer {
+  background-color: var(--bg_body);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.detailsBackgroundContainer {
+  width: 100vw;
+  height: 280px;
+  background-color: var(--body-text);
+}
+.detailsBox {
+  padding: 0px 44% 0px 19%;
+  height: 100%;
+}
+.detailsContainer {
+  align-items: flex-start;
+  padding: 30px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.infoBox {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  padding-top: 15px;
+  width: 100%;
+  height: 100%;
+}
+.infoBox p {
+  color: var(--bg_default);
+  font-size: 16px;
+  margin: 0px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ratingBox {
+  display: flex;
+  font-size: 16px;
+}
+
+.starIcon {
+  color: #e5a906;
+  margin: 0px;
+}

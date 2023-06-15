@@ -1,0 +1,8 @@
+.contentContainer {
+  background-color: var(--bg_body);
+  padding: 20px 4% 0px 4%;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}

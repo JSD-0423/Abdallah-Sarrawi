@@ -1,0 +1,19 @@
+.headerBox {
+  background-color: var(--bg_default);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0px 55px 0px 55px;
+}
+.title {
+  color: var(--brand-primary);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

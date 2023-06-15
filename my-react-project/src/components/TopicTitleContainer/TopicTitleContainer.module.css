@@ -1,0 +1,15 @@
+.topicTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h3 {
+  margin: 0px;
+  color: var(--dark-body-text);
+  font-size: 24px;
+}
+h4 {
+  margin: 0px;
+  color: var(--brand-secondary);
+  font-weight: 400;
+}

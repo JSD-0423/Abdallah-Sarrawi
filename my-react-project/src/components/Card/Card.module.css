@@ -1,0 +1,77 @@
+.cardContainer {
+  display: flex;
+  background-color: var(--bg_default);
+  align-items: flex-start;
+  flex-direction: column;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.imgBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 140px;
+  border-radius: 7px 7px 0px 0px;
+}
+.imgBanner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px 7px 0px 0px;
+  object-fit: cover;
+}
+.cardDetails {
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+}
+.cardInfo {
+  width: 100%;
+  color: var(--body-text);
+  margin: 0px;
+  padding-bottom: 10px;
+}
+.cardInfo h5 {
+  margin: 0px;
+  height: 35px;
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cardInfo p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--body-text);
+  white-space: nowrap;
+  margin: 0px;
+}
+
+.starsBox {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  padding-bottom: 15px;
+}
+.starIcon {
+  color: #e5a906;
+}
+.authorBox {
+  display: flex;
+  margin: 0px;
+  color: gray;
+  font-size: 12px;
+  font-weight: 400;
+}
+.authorBox p {
+  margin: 0px;
+}
