@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Header.module.css";
-import Button from "../Button/Button";
+import OutLineButton from "../OutLineButton/OutLineButton";
 
 function Header() {
   return (
     <div className={styles.headerBox}>
       <h1 className={styles.title}>Web Topics</h1>
       <div className={styles.btns}>
-        <Button iconName={"moon-outline"} text={"Dark Mode"} />
-        <Button iconName={"heart-outline"} text={"Favourite"} />
+        <OutLineButton iconName={"moon-outline"} text={"Dark Mode"} />
+        <OutLineButton iconName={"heart-outline"} text={"Favourite"} />
       </div>
     </div>
   );

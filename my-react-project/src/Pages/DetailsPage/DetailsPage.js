@@ -1,8 +1,33 @@
-import React from "react";
-import styles from "./DetailsContentContainer.module.css";
-import TopicTitleContainer from "../TopicTitleContainer/TopicTitleContainer";
+import React, { useEffect, useState } from "react";
 
-const DetailsContentContainer = () => {
+import { useLocation } from "react-router-dom";
+
+import TopicTitleContainer from "../../components/TopicTitleContainer/TopicTitleContainer";
+import styles from "./DetailsPage.module.css";
+import RelatedTopics from "../../components/RelatedTopics/RelatedTopics";
+import DetailsCard from "../../components/DetailsCard/DetailsCard";
+import axios from "axios";
+
+const DetailsPage = (subTopicsHTML, cardTopic, authorName) => {
+  const location = useLocation();
+  const [pageDetails, setPageDetails] = useState({});
+
+  console.log("pageDetails", pageDetails);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `https://tap-web-1.herokuapp.com/topics/details/${location.state.id}`
+        );
+        setPageDetails(response.data);
+      } catch (error) {
+        // Handle the error
+        console.error(error.message);
+      }
+    };
+    fetchData();
+  }, [location]);
+
   return (
     <div className={styles.detailsContentContainer}>
       <div className={styles.detailsBackgroundContainer}>
@@ -35,8 +60,9 @@ const DetailsContentContainer = () => {
           </div>
         </div>
       </div>
+      <RelatedTopics />
+      <DetailsCard />
     </div>
   );
 };
-
-export default DetailsContentContainer;
+export default DetailsPage;

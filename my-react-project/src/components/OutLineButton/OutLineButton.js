@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Button.module.css";
+import styles from "./OutLineButton.module.css";
 
-const Button = ({ iconName, text, onClick }) => {
+const OutLineButton = ({ iconName, text, onClick }) => {
   return (
     <button className={styles.button} id="mode-button">
       <i>
@@ -11,4 +11,4 @@ const Button = ({ iconName, text, onClick }) => {
     </button>
   );
 };
-export default Button;
+export default OutLineButton;

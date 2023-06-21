@@ -5,8 +5,10 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import DetailsPage from "./Pages/DetailsPage";
+import HomePage from "./Pages/HomePage/HomePage";
+import DetailsPage from "./Pages/DetailsPage/DetailsPage";
+import Header from "./components/Header/Header";
+import WelcomeMessage from "./components/WelcomeMessage/WelcomeMessage";
 function App() {
   const router = createBrowserRouter([
     {
@@ -19,7 +21,13 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <div>
+      <Header />
+      <WelcomeMessage />
+      <RouterProvider router={router} />;
+    </div>
+  );
 }
 
 export default App;

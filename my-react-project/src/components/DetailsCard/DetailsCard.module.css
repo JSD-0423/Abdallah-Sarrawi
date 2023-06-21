@@ -1,0 +1,85 @@
+.CardContainer {
+  width: 320px;
+  height: 420px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg_default);
+  align-items: flex-start;
+  position: absolute;
+  top: 3%;
+  left: 58%;
+  object-fit: cover;
+}
+
+.ImgBanner {
+  width: 100%;
+  height: 200px;
+}
+.ImgBanner img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.CardInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px 15px 15px;
+  width: 100%;
+  height: 100%;
+}
+.CardInfo h6 {
+  text-align: center;
+  margin: 0px;
+  padding: 15px 0px 0px 0px;
+  font-size: 14px;
+  color: gray;
+  align-self: center;
+  font-weight: 200;
+}
+
+.AuthorBox {
+  margin-bottom: 10px;
+}
+.AuthorBox p {
+  margin: 0px;
+}
+
+.FeedbackBox {
+  border: 1px solid var(--lines-color);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  padding: 15px 15px 15px 15px;
+  height: 100%;
+}
+
+.FeedbackBox p {
+  margin: 0px;
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+.AddToFav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 55px;
+  background-color: var(--brand-secondary);
+  font-size: 20px;
+  color: var(--bg_default);
+  gap: 5px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border: 0px;
+}
+.FavIcon {
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  font-size: 30px;
+}
