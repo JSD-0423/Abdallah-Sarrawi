@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Abdallah-Sarrawi.github.io/my-react-project/static/css/main.65a1aac3.css",
-    "main.js": "/Abdallah-Sarrawi.github.io/my-react-project/static/js/main.650a6bfd.js",
-    "static/js/787.624ad79f.chunk.js": "/Abdallah-Sarrawi.github.io/my-react-project/static/js/787.624ad79f.chunk.js",
-    "index.html": "/Abdallah-Sarrawi.github.io/my-react-project/index.html",
-    "main.65a1aac3.css.map": "/Abdallah-Sarrawi.github.io/my-react-project/static/css/main.65a1aac3.css.map",
-    "main.650a6bfd.js.map": "/Abdallah-Sarrawi.github.io/my-react-project/static/js/main.650a6bfd.js.map",
-    "787.624ad79f.chunk.js.map": "/Abdallah-Sarrawi.github.io/my-react-project/static/js/787.624ad79f.chunk.js.map"
+    "main.css": "/Abdallah-Sarrawi/static/css/main.65a1aac3.css",
+    "main.js": "/Abdallah-Sarrawi/static/js/main.c89d6bbf.js",
+    "static/js/787.624ad79f.chunk.js": "/Abdallah-Sarrawi/static/js/787.624ad79f.chunk.js",
+    "index.html": "/Abdallah-Sarrawi/index.html",
+    "main.65a1aac3.css.map": "/Abdallah-Sarrawi/static/css/main.65a1aac3.css.map",
+    "main.c89d6bbf.js.map": "/Abdallah-Sarrawi/static/js/main.c89d6bbf.js.map",
+    "787.624ad79f.chunk.js.map": "/Abdallah-Sarrawi/static/js/787.624ad79f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.65a1aac3.css",
-    "static/js/main.650a6bfd.js"
+    "static/js/main.c89d6bbf.js"
   ]
 }
