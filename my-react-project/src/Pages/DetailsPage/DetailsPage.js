@@ -8,7 +8,7 @@ import RelatedTopics from "../../components/RelatedTopics/RelatedTopics";
 import DetailsCard from "../../components/DetailsCard/DetailsCard";
 import axios from "axios";
 
-const DetailsPage = (subTopicsHTML, cardTopic, authorName) => {
+const DetailsPage = () => {
   const location = useLocation();
   const [pageDetails, setPageDetails] = useState({});
 
@@ -33,13 +33,18 @@ const DetailsPage = (subTopicsHTML, cardTopic, authorName) => {
       <div className={styles.detailsBackgroundContainer}>
         <div className={styles.detailsBox}>
           <div className={styles.detailsContainer}>
-            <TopicTitleContainer />
+            <TopicTitleContainer
+              title={pageDetails.topic}
+              info={pageDetails.category}
+            />
             <div className={styles.ratingBox}>
               <i>
                 <ion-icon className={styles.starIcon} name="star"></ion-icon>
                 <ion-icon className={styles.starIcon} name="star"></ion-icon>
                 <ion-icon className={styles.starIcon} name="star"></ion-icon>
-                <ion-icon className={styles.starIcon} name="star"></ion-icon>
+                <ion-icon className={styles.starIcon} name="star">
+                  {" "}
+                </ion-icon>
                 <ion-icon
                   className={styles.starIcon}
                   name="star-outline"
@@ -47,15 +52,7 @@ const DetailsPage = (subTopicsHTML, cardTopic, authorName) => {
               </i>
             </div>
             <div className={styles.infoBox}>
-              <p>
-                HTML (Hypertext Markup Language) is the standard markup language
-                for creating web pages and other information that can be
-                displayed in a web browser. it provides a structure for content
-                and defines how it should be displayed on a web page, including
-                text, images, and multimedia. HTML is essential for creating
-                static web pages and is a foundational technology for the World
-                Wide Web.
-              </p>
+              <p>{pageDetails.description}</p>
             </div>
           </div>
         </div>
